@@ -62,19 +62,37 @@ const LocationName = document.querySelector("p");
 const tempprature = document.querySelector(".temp");
 const spanTime = document.querySelector(".time_location span");
 const WeatherCondtion = document.querySelector(".weather_condition span");
-const Emoji = document.querySelector("img");
+const Emoji = document.querySelector(".weather_condition img");
 function updateDOM(temp,condition,locationName,time,emoji){
         // console.log(temp);
-        console.log(condition);
+        // console.log(condition);
         // console.log(locationName);
-        // console.log(time);
+        console.log(time);
         // console.log(emoji);
 
         LocationName.innerText = locationName;
         tempprature.innerText = temp;
-        spanTime.innerText = time;
+       
 
         WeatherCondtion.innerText = condition;
+        Emoji.src=emoji;
         // Emoji.setAttribute("src","emoji");
 
+        // Split time And date
+        const exactDate = time.split(" ")[0];
+        const exactTime = time.split(" ")[1];
+
+        const dayNum = new Date(exactDate).getDay();
+        const exactDay = getDayFullName(dayNum);
+
+        const fullDayTime = `${exactDate} ${exactDay} ${exactTime}`;
+        spanTime.innerText = fullDayTime;
+        console.log(fullDayTime);
+
+
+}
+function getDayFullName(num){
+    // console.log(num);
+    const daysOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    return daysOfWeek[num];
 }
