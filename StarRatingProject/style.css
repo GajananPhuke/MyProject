@@ -1,0 +1,28 @@
+
+.main{
+    border: 2px solid red;
+    display: flex;
+    height: 98vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.stars{
+  font-size: 100px;
+  padding: 2px;
+  cursor: pointer;
+}
+.rating{
+  font-size:3rem;
+  font-weight: 600;
+}
+p{
+  font-size:3rem;
+  font-weight: 600;
+}
+
+
+.active{
+  color: gold;
+}
