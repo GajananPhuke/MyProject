@@ -1,0 +1,57 @@
+body{
+  border: 2px solid red;
+  height: 100vh;
+}
+.commentForm{
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: flex-end;
+}
+#commentInput{
+  height: 4rem;
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: lightcyan;
+}
+#submitComment{
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 15%;
+  margin-left: 10px;
+  background-color: yellow;
+  font-weight:800;
+}
+.commentContainer{
+
+}
+.comment {
+  border: 0.5px solid green;
+  border-style:ridge;
+  border-width: 0.5rem;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.comment p{
+  background-color:lemonchiffon;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.replyInput{
+  width: 50%;
+  background-color: lightcyan;
+  display: none;
+}
+.replyButton{
+  margin-left: 10px;
+  background-color: yellow;
+  border-radius: 3px;
+  height: 1.5rem;
+  width: 10%;
+}
+.activeGreen{
+  background-color: green;
+}
+p{
+  
+}
