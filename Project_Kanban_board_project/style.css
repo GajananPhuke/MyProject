@@ -1,0 +1,166 @@
+
+
+/* css variable  */
+:root{
+    --pink:lightpink;
+    --blue:lightblue;
+    --purple:purple;
+    --green:green;
+    --white:white;
+    --dark:black;
+    --red:red;
+}
+.tool-box{
+    /* border: 3px solid gold; */
+    display: flex;
+    background-color: black;
+    height: 5rem;
+    align-items: center;
+}
+.color{
+    height: 2rem;
+    width: 3.5rem;
+    cursor: pointer;
+    border: 2px solid red;
+    background-color: aqua;
+    border-radius: 5px;
+}
+.color:hover{
+    border: 2px solid white;
+}
+.toolbox-priority{
+    border: 3px solid skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 70%;
+    margin-left: 5rem;
+    background-color: #393c3f;
+}
+.action-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    border: 3px solid skyblue;
+    color: balck;
+    width: 10rem;
+    height: 70%;
+    margin-left: 5rem;
+}
+.pink{
+    background-color: var(--pink);
+}
+.blue{
+    background-color: var(--blue);
+}
+.purple{
+    background-color: var(--purple);
+}
+.green{
+    background-color: var(--green);
+}
+.white{
+    background-color: var(--white);
+}
+.red{
+    color: red;
+}
+.add-btn , .remove-btn{
+    cursor: pointer;
+}
+.heading-container{
+    display: flex;
+    text-align: center;
+}
+.heading-pending{
+    width: 70%;
+}
+.heading-finished{
+    width:30%;
+}
+.container-wrapper{
+    display: flex;
+}
+.pending-container{
+    width: 70%;
+    border: 2px solid black;
+}
+.finished-container{
+    width:30%;
+    border: 2px solid black;
+}
+.container{
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.ticket_container{
+    height: 12rem;
+    width: 12rem;
+    border:2px solid black;
+    position: relative;
+    background-color: rgb(96, 200, 244);
+}
+.ticket_color{
+    height: 10%;
+    /* background-color: yellow; */
+}
+.ticket_id{
+    padding-left: 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.ticket_area{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.ticket_lock_unlock{
+   font-size: 1rem;
+   position: absolute;
+   bottom: 10px;
+   right: 15px;
+}
+.model_container{
+    height: 50vh;
+    width: 50vw;
+    /* display: flex; */
+    display: none;
+    border: 2px solid black;
+    position: fixed;
+    top: 25vh;
+    left: 25vw;
+    right: 25vw;
+    bottom: 25vh;
+}
+.priority_color{
+    height: 2rem;
+    width: 3.5rem;
+    border: 2px solid var(--white);
+}
+.textarea_container{
+    height: 100%;
+    width: 75%;
+    font-size: 1.5rem;
+    color: var(--dark);
+    resize: none;
+}
+.priorty_color_container{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--dark);
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+.active{
+    border: 3px solid red;
+}
